@@ -1,4 +1,5 @@
 import React from 'react'
+import "../Home/Home.css"
 import Topbar from '../../components/topbar/Topbar';
 import Sidebar from '../../components/sideBar/Sidebar'
 import Rightbar from '../../components/rightBar/Rightbar';
