@@ -1,8 +1,9 @@
 import React from "react";
 import birthday from "../../Assets/gift.png";
 import Ads from "../../Assets/ad.png";
-import person3 from "../../Assets/persons/3.jpeg"
 import "../rightBar/rightbar.css";
+import { Users } from "../../dummyData";
+import Oline from "../online/Oline";
 
 function Rightbar() {
   return (
@@ -15,15 +16,11 @@ function Rightbar() {
           </span>
         </div>
         <img src={Ads} alt="" className="rightbarAd" />
-        <h4 className="rightbarTitle">Online Friends</h4> 
+        <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img className="rightbarProfileImg" src={person3} alt="" />
-               <span className="rightbarOnline"></span>
-            </div>
-            <span className="rigthbarUsername">John Carter</span>
-          </li>
+          {Users.map((u) => (
+            <Oline key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
