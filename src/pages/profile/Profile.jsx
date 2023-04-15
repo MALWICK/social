@@ -28,7 +28,7 @@ function Profile() {
             />
           </div>
           <div className="profileInfo">
-              <h4 className="profileInfoName">Bata Humphrey</h4>
+              <h4 className="profileInfoName">Bata Humphrey </h4>
               <span className="profileInfoDesc">Hello my friends!</span>
           </div>
         </div>
