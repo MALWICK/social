@@ -44,7 +44,7 @@ function Rightbar({ profile }) {
             <span className="rightbarInfoValue">Single</span>
           </div>
         </div>
-        <h4 className="rightbarTitle">User friends</h4>
+        <h4 className="rightbarTitles">User friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
             <img
